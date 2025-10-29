@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel = "stylesheet" href = "importStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Import</title>
+    <style>
+        body{
+            background-color: #9BA4B4;
+            height: 100vh
+        }
+        .primary{
+            background-color: #14274E;
+            border: 3px solid #394867;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .secondary{
+            background-color: #394867;
+            border: 2px solid #F1F6F9;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .text{
+            color: #F1F6F9;
+            text-decoration: none;
+            font-family: "Fira Sans";
+        }
+        #searchingParameters{
+            margin-top: 2%;
+            width: 33%;
+            float: right;
+            height: 80%;
+        }
+        #uploadArea{
+            margin-top: 2%;
+            width: 66%;
+            float: left;
+            height: 80%;
+        }
+        #parameterDiv{
+            padding: 7px;
+            height: 20%;
+        }
+        #uploadDiv{
+            margin: auto;
+            margin-top: 5%;
+            height: 80%;
+            width: 90%;
+        }
+        #button{
+        
+            text-align: center;
+        }
+        .navbar{
+            background-color:#14274E;
+            padding: 20px 40px;
+            display: flex;
+            gap: 250px;
+            align-items: center;
+            justify-content: center;
+            border-radius:20px;
+            margin:5px auto;
+            width: 94%;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #F1F6F9;
+            font-weight: 600;
+            font-size:20px;
+                
+        }
+        .logo{
+            position: absolute;
+            top: 200px;
+            width:auto;
+        }
+    </style>
 </head>
 <body>
-    
+
+
+    <div class="navbar">
+        <a href = "index.html">
+            <img src="images\Logo,NavbarPrimary.png" alt="Campus Companion Logo" style="height:75px;">
+        </a>
+        <a href="Calendars.html">Import</a>
+        <a href="pricing.html">Premium</a>
+        <a href="team.html">About Us</a>
+        <a href="products_features.html">Product</a>
+
+
+    </div>
+
+
+    <div id= "searchingParameters" class = "primary">
+        <!-- Edit this part-->
+        <div class = "secondary" id = "parameterDiv">
+            <label class = "text" for = "Destination" >Destination: </label>
+            <input type = text>
+        </div>
+        <br>
+
+
+        <div class = "secondary"  id = "parameterDiv">
+            <label class = "text" for = "File Type" >File Type: </label>
+            <select>
+                <option value = 1>.txt</option>
+                <option value = 2>.pdf</option>
+                <option value = 3>.png</option>
+
+
+            </select>
+        </div>
+        <br>
+
+
+        <div class = "secondary"  id = "parameterDiv">
+            <label class = "text" for = "Keywords" >Keywords: </label>
+            <input type = text>
+        </div>
+        <br>
+
+
+        <div class = "secondary"  id = "parameterDiv">
+            <label class = "text" for = "Manual Edit" >Manual Edit: </label>
+            <input type = checkbox>
+        </div>
+
+
+        <br>
+
+
+        <div>
+            <button id= "button"> GO! </button>
+        </div>
+
+
+    </div>
+
+
+    <div id= "uploadArea" class = "primary">
+        <div id = uploadDiv class = "secondary">
+            Upload the stuff here
+        </div>  
+    </div>
+   
+
+
 </body>
-</html>
+</html>  
