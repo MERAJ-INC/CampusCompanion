@@ -9,21 +9,30 @@
         body{
             margin: 0;
             font-family: 'Fira Sans', sans-serif;
+            background-color: #9BA4B4;
         }
         .navbar{
-            background-color:#9BA4B4;
+            background-color:#14274E;
             padding: 20px 40px;
             display: flex;
-            gap: 100px;
+            gap: 250px;
             align-items: center;
             justify-content: center;
+            border-radius:20px;
+            margin:5px auto;
+            width: 94%;
         }
         .navbar a{
             text-decoration: none;
             color: #F1F6F9;
             font-weight: 600;
-            font-size:16px;
+            font-size:20px;
             
+        }
+        .logo{
+            position: absolute;
+            top: 200px;
+            width:auto;
         }
 
     </style>
@@ -32,11 +41,18 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="Import.html">Import</a>
+        <a href = "index.html">
+            <img src="images\Logo,NavbarPrimary.png" alt="Campus Companion Logo" style="height:75px;">
+        </a>
+        <a href="Calendars.html">Import</a>
         <a href="pricing.html">Premium</a>
         <a href="team.html">About Us</a>
         <a href="products_features.html">Product</a>
 
     </div>
+    <div class = "logo">
+        <img src = "images\Logo,Navbar.png" alt="CAMPUS COMPANION" style="height:300px;">
+    </div>
 </body>
+
 </html>
