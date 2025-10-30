@@ -7,25 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <title>Campus Companion - Team</title>
     <link rel='stylesheet' type='text/css' media='screen' href='team.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./components/navbar.css'>
+
 </head>
 <body>
-        <!-- NAVIGATION BAR --> 
-   <nav class="navbar">
-    <div class="nav-left">
-      <a href="index.html">
-      <img src="images\Logo,NavbarPrimary.png" alt="Logo" class="nav-logo" />
-    </div> </a>
-
-    <div class="nav-links">
-      <a href="import.html">Import</a>
-      <a href="/pricing.html">Premium</a>
-      <a href="/team.html">Learn about us</a>
-      <a href="/products_features.html">Product</a>
-    </div>
-  </nav>
-  
+    <div id="navbar-placeholder"></div>
     <section>
-
     <div class="grid-container">
           
         <div class="card">
@@ -112,6 +99,15 @@
      </div>
 </div>
     </section>
+     <!-- JavaScript files here -->
+        <script>
+    // Load navbar.html into the placeholder
+    fetch('./components/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
 
