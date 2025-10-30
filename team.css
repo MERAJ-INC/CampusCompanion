@@ -8,6 +8,8 @@
  body {
      padding: 0;
      margin: 0;
+     box-sizing: 0px;
+     font-family: "Fira Sans", sans-serif;
      background-color: var(--background)
  }
 
@@ -31,7 +33,8 @@
      gap: 20px;
      align-items: center;
      padding: 15px;
-     border: 1px solid #ccc;
+     border: 1px solid var(--secondary);
+     /* border: 1px solid #ccc; */
      border-radius: 10px;
      background-color: var(--secondary);
      /* background-color: #f9f9f9; */
@@ -43,6 +46,7 @@
      height: 170px;
      object-fit: cover;
      border-radius: 8px;
+
  }
 
  /* Description styling */
@@ -51,6 +55,17 @@
      color: #333;
  }
 
+ p {
+     color: var(--font);
+     font-weight: 500;
+     font-size: 18px;
+     margin-top: 5px;
+ }
+
+ h3 {
+     color: var(--font);
+     /* margin: ; */
+ }
 
 
  /* Responsive for tablet/small screens */
