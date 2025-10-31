@@ -31,13 +31,12 @@
      display: grid;
      grid-template-columns: 150px 1fr;
      gap: 20px;
-     align-items: center;
+     /* align-items: center; */
      padding: 15px;
      border: 1px solid var(--secondary);
-     /* border: 1px solid #ccc; */
      border-radius: 10px;
      background-color: var(--secondary);
-     /* background-color: #f9f9f9; */
+
  }
 
  /* Image styling */
@@ -49,10 +48,42 @@
 
  }
 
+ /*   Image hover effect */
+ .member-img {
+     overflow: hidden;
+ }
+
+ .member-img img {
+     transform-origin: 50% 50%;
+     transition: transfom 1s, filter 0.4s ease-out;
+ }
+
+
+ .member-img:hover img {
+     transform: scale(1.2);
+ }
+
  /* Description styling */
  .card .description {
      font-size: 16px;
      color: #333;
+ }
+
+ .social {
+     width: 65px;
+     border: 2px solid var(--font);
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .social-icon-github {
+     text-align: center;
+     color: var(--font);
+     border-color: var(--font);
+     text-decoration: none;
+     font-size: 25px;
  }
 
  p {
@@ -64,7 +95,6 @@
 
  h3 {
      color: var(--font);
-     /* margin: ; */
  }
 
 
@@ -79,6 +109,17 @@
  @media (max-width: 600px) {
      .grid-container {
          grid-template-columns: 1fr;
-         /* stack cards on very small screens */
+         /* small screens */
      }
+ }
+
+ .footer-team {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 3rem;
+     font-size: 0.85rem;
+     text-align: center;
+     color: var(--primary);
+
  }
