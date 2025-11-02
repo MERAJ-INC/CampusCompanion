@@ -1,0 +1,109 @@
+:root {
+     --primary: #14274E;
+     --secondary: #394867;
+     --background: #9BA4B4;
+     --font: #F1F6F9;
+ }
+
+ body {
+     padding: 0;
+     margin: 0;
+     box-sizing: 0px;
+     font-family: "Fira Sans", sans-serif;
+     background-color: var(--background)
+ }
+
+ section {
+     margin: auto;
+     width: 90%;
+ }
+
+ .grid-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     /* full width on desktop */
+     gap: 20px;
+     padding: 20px;
+ }
+
+ /* Each card */
+ .card {
+     display: grid;
+     grid-template-columns: 150px 1fr;
+     gap: 20px;
+     align-items: center;
+     padding: 15px;
+     border: 1px solid var(--secondary);
+     /* border: 1px solid #ccc; */
+     border-radius: 10px;
+     background-color: var(--secondary);
+     /* background-color: #f9f9f9; */
+ }
+
+ /* Image styling */
+ .card img {
+     width: 150px;
+     height: 170px;
+     object-fit: cover;
+     border-radius: 8px;
+
+ }
+
+ /* Description styling */
+ .card .description {
+     font-size: 16px;
+     color: var(--font);
+ }
+
+ p {
+     color: var(--font);
+     font-weight: 500;
+     font-size: 18px;
+     margin-top: 5px;
+ }
+
+ h3 {
+     color: var(--font);
+     /* margin: ; */
+ }
+
+
+ /* Responsive for tablet/small screens */
+ @media (max-width: 900px) {
+     .grid-container {
+         grid-template-columns: repeat(2, 1fr);
+         /* two cards per row */
+     }
+ }
+
+ @media (max-width: 600px) {
+     .grid-container {
+         grid-template-columns: 1fr;
+         /* stack cards on very small screens */
+     }
+ }
+
+ .icon svg {
+    width: 60px;
+    height: 60px;
+    stroke: var(--font);  
+ }
+
+ .card {
+    display: grid;
+    grid-template-columns: 80px  1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--secondary);
+    box-shadow: 0 4px 10px
+rgba(0,0,0,0.15);
+ }
+
+ section h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-top: 40px;
+    font-sixe: 2em;
+ }
