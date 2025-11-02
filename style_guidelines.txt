@@ -1,0 +1,21 @@
+Style Guidelines – Campus Companion
+
+
+-Color Theme:
+We use a calm and professional color palette. The background color (#F1F6F9) gives a clean and light feel, while accent colors (#14274E, #394867, #9BA4B4) convey a sense of trust and modernity.
+#F1F6F9
+#14274E
+#394867
+#9BA4B4
+
+-Typography:
+We chose the Fira Sans font because it’s simple, readable, and modern. Headings are bold for emphasis, and body text is regular for clarity.
+
+-Iconography:
+We use flat-design icons to keep the interface clean and contemporary. This helps users navigate intuitively.
+
+-Buttons:
+Buttons have a flat design, consistent with our overall aesthetic, to keep the interface looking sleek.
+
+
+-These guidelines are reflected in the website design to ensure a cohesive and user-friendly experience.

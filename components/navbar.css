@@ -1,0 +1,74 @@
+ :root {
+     --primary: #14274E;
+     --secondary: #394867;
+     --background: #9BA4B4;
+     --font: #F1F6F9;
+ }
+
+ /* === FIXED NAVBAR === */
+ .navbar {
+     background-color: var(--primary);
+     padding: 20px 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 20px;
+     margin: 10px auto;
+     width: 94%;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+ }
+
+ /* Logo section */
+ .nav-left {
+     display: flex;
+     align-items: center;
+ }
+
+ .nav-logo {
+     height: 55px;
+     width: auto;
+     object-fit: contain;
+ }
+
+ /* Links */
+ .nav-links {
+     display: flex;
+     gap: 120px;
+     /* Adjust spacing between words */
+     justify-content: center;
+     align-items: center;
+     flex-grow: 1;
+ }
+
+ .nav-links a {
+     color: var(--font);
+     text-decoration: none;
+     font-weight: 800;
+     font-size: 1.1rem;
+     letter-spacing: 0.5px;
+ }
+
+
+ .nav-links a:hover {
+     opacity: 0.85;
+     transform: scale(1.05);
+ }
+
+ /* Responsive layout */
+ @media (max-width: 1100px) {
+     .nav-links {
+         gap: 60px;
+     }
+ }
+
+ @media (max-width: 800px) {
+     .navbar {
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .nav-links {
+         flex-direction: column;
+         gap: 15px;
+     }
+ }

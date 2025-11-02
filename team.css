@@ -1,0 +1,132 @@
+ :root {
+     --primary: #14274E;
+     --secondary: #394867;
+     --background: #9BA4B4;
+     --font: #F1F6F9;
+ }
+
+ body {
+     padding: 0;
+     margin: 0;
+     box-sizing: 0px;
+     font-family: "Fira Sans", sans-serif;
+     background-color: var(--background)
+ }
+
+ section {
+     margin: auto;
+     width: 90%;
+ }
+
+ .grid-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     /* full width on desktop */
+     gap: 20px;
+     padding: 20px;
+ }
+
+ /* Each card */
+ .card {
+     display: grid;
+     grid-template-columns: 150px 1fr;
+     gap: 20px;
+     /* align-items: center; */
+     padding: 15px;
+     border: 1px solid var(--secondary);
+     border-radius: 10px;
+     background-color: var(--secondary);
+
+ }
+
+ /* Image styling */
+ .card img {
+     width: 150px;
+     height: 170px;
+     object-fit: cover;
+     border-radius: 8px;
+
+ }
+
+ /*   Image hover effect */
+ .member-img {
+     overflow: hidden;
+ }
+
+ .member-img img {
+     transform-origin: 50% 50%;
+     transition: transfom 1s, filter 0.4s ease-out;
+ }
+
+
+ .member-img:hover img {
+     transform: scale(1.2);
+ }
+
+ /* Description styling */
+ .card .description {
+     font-size: 16px;
+     color: #333;
+ }
+
+ .social {
+     width: 65px;
+     border: 2px solid var(--font);
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .social-icon-github {
+     text-align: center;
+     color: var(--font);
+     border-color: var(--font);
+     text-decoration: none;
+     font-size: 25px;
+ }
+
+ p {
+     color: var(--font);
+     font-weight: 500;
+     font-size: 18px;
+     margin-top: 5px;
+ }
+
+ h3 {
+     color: var(--font);
+ }
+
+
+ /* Responsive for tablet/small screens */
+ @media (max-width: 900px) {
+     .grid-container {
+         grid-template-columns: repeat(2, 1fr);
+         /* two cards per row */
+     }
+ }
+
+ @media (max-width: 600px) {
+     .grid-container {
+         grid-template-columns: 1fr;
+         /* small screens */
+     }
+ }
+
+ .footer-team {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 3rem;
+     font-size: 0.85rem;
+     text-align: center;
+     color: var(--primary);
+
+ }
+
+ .myspan {
+     color: var(--font);
+     font-weight: 500;
+     font-size: 14px;
+     margin-top: 5px;
+ }
