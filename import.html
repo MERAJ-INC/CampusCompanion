@@ -22,33 +22,71 @@
       color: #f1f6f9;
     }
 
-    /* Navbar */
     .navbar {
-      background-color: #14274e;
-      padding: 15px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 100px;
-      border-radius: 20px;
-      width: 94%;
-      margin: 10px auto;
-    }
+  background-color: #14274e; 
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin: 10px auto;
+  width: 94%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
 
-    .navbar a {
-      text-decoration: none;
-      color: #f1f6f9;
-      font-weight: 600;
-      font-size: 20px;
-      transition: color 0.3s;
-    }
+ /* Logo section */
+ .nav-left {
+     display: flex;
+     align-items: center;
+ }
 
-    .navbar a:hover {
-      color: #9ba4b4;
-    }
+ .nav-logo {
+     height: 55px;
+     width: auto;
+     object-fit: contain;
+ }
 
-    .navbar img {
-      height: 75px;
+ /* Links */
+ .nav-links {
+     display: flex;
+     gap: 120px;
+     /* Adjust spacing between words */
+     justify-content: center;
+     align-items: center;
+     flex-grow: 1;
+ }
+
+ .nav-links a {
+     color: var(--font);
+     text-decoration: none;
+     font-weight: 800;
+     font-size: 1.1rem;
+     letter-spacing: 0.5px;
+ }
+
+
+ .nav-links a:hover {
+     opacity: 0.85;
+     transform: scale(1.05);
+ }
+
+ /* Responsive layout */
+ @media (max-width: 1100px) {
+     .nav-links {
+         gap: 60px;
+     }
+ }
+
+ @media (max-width: 800px) {
+     .navbar {
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .nav-links {
+         flex-direction: column;
+         gap: 15px;
+     }
     }
 
     /* Layout containers */
@@ -196,7 +234,7 @@
 
   #searchingParameters,
   #uploadArea {
-    height: calc(100vh - 180px); /* adjusts for navbar + margins */
+    height: calc(100vh - 180px); 
   }
 
   #uploadDiv {
@@ -208,15 +246,19 @@
 </head>
 <body>
   <!-- Navbar -->
-  <div class="navbar">
-    <a href="index.html">
-      <img src="images/Logo,NavbarPrimary.png" alt="Campus Companion Logo" />
-    </a>
-    <a href="import.html">Import</a>
-    <a href="pricing.html">Premium</a>
-    <a href="team.html">About Us</a>
-    <a href="products_features.html">Product</a>
-  </div>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+      <img src="images\Logo,NavbarPrimary.png" alt="Logo" class="nav-logo" />
+    </div> </a>
+
+    <div class="nav-links">
+      <a href="import.html">Import</a>
+      <a href="pricing.html">Premium</a>
+      <a href="team.html">About us</a>
+      <a href="products_features.html">Product</a>
+    </div>
+  </nav>
 
   <!-- Main Content -->
   <main>
