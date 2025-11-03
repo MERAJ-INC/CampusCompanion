@@ -1,21 +1,32 @@
-Style Guidelines – Campus Companion
+Overall Look and Feel of Campus Companion
+===============================
+This websites uses modern, professional, and user friendly as its should be easy-to-use. We will avoid small features/text and make everything accessible. 
 
 
--Color Theme:
-We use a calm and professional color palette. The background color (#F1F6F9) gives a clean and light feel, while accent colors (#14274E, #394867, #9BA4B4) convey a sense of trust and modernity.
-#F1F6F9
-#14274E
-#394867
-#9BA4B4
+Colours
+========
+Our colour theme that we chose was gradients of blue as it represented minimalistic and simplistic choices.  Additionally, we picked blue because it is the colour that students wear when they graduate, giving confidence within our product and the services they provide; and is associated with being successful.
 
--Typography:
-We chose the Fira Sans font because it’s simple, readable, and modern. Headings are bold for emphasis, and body text is regular for clarity.
+#F1F6F9 - Font Colour
+#14274E - Primary Colour
+#394867 - Secondary Colour
+#9BA4B4 - Background Colour
 
--Iconography:
-We use flat-design icons to keep the interface clean and contemporary. This helps users navigate intuitively.
+Iconography
+===========
+We use flat-design icons to keep the interface clean and contemporary. This helps users navigate more intuitively and simply.
 
--Buttons:
-Buttons have a flat design, consistent with our overall aesthetic, to keep the interface looking sleek.
+Typography
+==========
+We will be using Fira Sans (Bold) from Google Fonts.
+
+Links
+=====
+We have no links to underline as using the navbar will allow you to go to other pages of our website.
+
+Buttons
+=======
+Buttons have a flat design, consistent with our overall aesthetic, to keep the interface looking simple and modern.
 
 
--These guidelines are reflected in the website design to ensure a cohesive and user-friendly experience.
+These guidelines are reflected in the website design to ensure a cohesive and user-friendly experience.
