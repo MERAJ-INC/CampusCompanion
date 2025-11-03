@@ -11,40 +11,110 @@
             font-family: 'Fira Sans', sans-serif;
             background-color: #9BA4B4;
         }
-        .navbar{
-            display: grid;
-            grid_template_columns: auto 1fr;
-            background-color:#14274E;
+         :root {
+        --primary: #14274E;
+        --secondary: #394867;
+        --background: #9BA4B4;
+        --font: #F1F6F9;
+        }
+        /* === FIXED NAVBAR === */
+        .navbar {
+            background-color: var(--primary);
             padding: 20px 40px;
             display: flex;
-            gap: 250px;
             align-items: center;
-            border-radius:20px;
-            margin:5px auto;
-            width: 94%;
-        }
-        .navbar img{
-            height: 75px;
-        }
-        .navbar a{
-            display: grid;
-            text-decoration: none;
-            color: #F1F6F9;
-            font-weight: 600;
-            font-size:20px;
+            justify-content: space-between;
             
+            border-radius: 20px;
+            margin: 10px auto;
+            width: 94%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
         }
-        .logo{
-            position: relative;
-            display: flex;
-            align-items: flex-start;
-        }
-        .logo-text{
-            position:absolute;
-            top: 60px;
-            left: 250px;
 
+        /* Logo section */
+        .nav-left {
+            display: flex;
+            align-items: center;
         }
+
+        .nav-logo {
+            height: 55px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Links */
+        .nav-links {
+            display: flex;
+            gap: 120px;
+            /* Adjust spacing between words */
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .nav-links a {
+            color: var(--font);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+
+        .nav-links a:hover {
+            opacity: 0.85;
+            transform: scale(1.05);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 1100px) {
+            .nav-links {
+                gap: 60px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        .center-stuff {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        }
+
+        .logo-grid {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .logo-img {
+            height: 300px;
+        }
+
+        .text-block {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        .center-text {
+            margin: 0;
+            font-size: 650%;
+            color: #14274E;
+            font-weight: 700;
+        }
+
        
 
     </style>
@@ -52,25 +122,37 @@
 
 </head>
 <body>
-    <div class="navbar">
-        <a href = "index.html">
-            <img src="images\Logo,NavbarPrimary.png" alt="Campus Companion Logo" style="height:75px;">
-        </a>
-        <a href="import.html">Import</a>
-        <a href="pricing.html">Premium</a>
-        <a href="team.html">About Us</a>
-        <a href="products_features.html">Product</a>
+          <!-- NAVIGATION BAR --> 
+   <div><nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+      <img src="images\Logo,NavbarPrimary.png" alt="Logo" class="nav-logo" />
+    </div> </a>
 
+    <div class="nav-links">
+      <a href="import.html">Import</a>
+      <a href="pricing.html">Premium</a>
+      <a href="team.html">About us</a>
+      <a href="products_features.html">Product</a>
     </div>
-   <div class="logo-grid">
-    <img src="images/Logo,Navbar.png" alt="CAMPUS COMPANION" class="logo-img">
-    <div class="text-block">
-        <h1 class="center-text">ampus</h1>
-        <h1 class="center-text">ompanion</h1>
-  </div>
+  </nav>
+   </div>
+
+   <div class="center-stuff">
+    <div class="logo-grid">
+        <img src="images/Logo,Navbar.png" alt="CAMPUS COMPANION" class="logo-img">
+        <div class="text-block">
+            <h1 class="center-text">ampus</h1>
+            <h1 class="center-text">ompanion</h1>
+        </div>
+    </div>
 </div>
 
-    
+
+<script>
+  console.log("The page loaded Sucesffully");
+</script>
+
 </body>
 
 </html>
