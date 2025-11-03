@@ -10,3 +10,7 @@ function loadNavbar(targetId = 'navbar-placeholder') {
 document.addEventListener('DOMContentLoaded', () => {
     loadNavbar();
 });
+
+
+
+
